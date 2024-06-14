@@ -66,12 +66,19 @@ canvas{
 	.contenedor {
 		grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas medianas */
 	}
+
+	
 }
 
 @media (max-width: 768px) {
 	.contenedor {
 		grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
 		gap: 2rem; /* Reducir el espacio entre elementos */
+	}
+
+	.trailer_container{
+		height: 200px;
+		width: 550px;
 	}
 }
 
@@ -81,6 +88,12 @@ canvas{
 		gap: 1rem; /* Reducir aún más el espacio entre elementos */
 		padding: 0.5rem; /* Reducir el padding */
 	}
+
+	.trailer_container{
+		height: 200px;
+		width: 550px;
+	}
+	
 }
 
 
@@ -95,5 +108,8 @@ canvas{
 .tvTitle{
 	font-size: 40px;
 }
+
+
+
 
 
