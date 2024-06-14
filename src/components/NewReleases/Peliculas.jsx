@@ -66,8 +66,8 @@ const Peliculas = () => {
         )}
       </div>
       <div className="paginacion">
-        <button id="btnAnterior" onClick={handleAnterior} disabled={pagina === 1}>Anterior</button>
-        <button id="btnSiguiente" onClick={handleSiguiente}>Siguiente</button>
+        <button id="btnAnterior" onClick={handleAnterior} disabled={pagina === 1}>Previous</button>
+        <button id="btnSiguiente" onClick={handleSiguiente}>Next</button>
       </div>
     </div>
   );
