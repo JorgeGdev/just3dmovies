@@ -26,7 +26,9 @@ export default function Television({ videoId }) {
           distanceFactor={0.4}
           position={[-0.10, 0.34, 0]}
         >
+          <div className='youtube-container'>
           {videoId ? <YouTube videoId={videoId} opts={opts} /> : <p className='tvTitle'>Select a trailer</p>}
+          </div>
         </Html>
       </primitive>
     </>

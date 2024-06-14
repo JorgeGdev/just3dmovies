@@ -62,28 +62,101 @@ canvas{
 
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
+
+/* Estilos Generales */
+.htmlScreen iframe {
+	width: 90vw; /* Ancho relativo al viewport */
+	height: calc(90vw * 9 / 16); /* Mantener la proporción 16:9 */
+	max-width: 1050px; /* Limitar el ancho máximo */
+	max-height: 580px; /* Limitar la altura máxima */
+	min-width: 300px; /* Establecer un ancho mínimo */
+	min-height: calc(300px * 9 / 16); /* Mantener la proporción 16:9 */
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .youtube-container {
+	width: 90vw; /* Ancho relativo al viewport */
+	height: calc(90vw * 9 / 16); /* Mantener la proporción 16:9 */
+	max-width: 1050px; /* Limitar el ancho máximo */
+	max-height: 580px; /* Limitar la altura máxima */
+	min-width: 300px; /* Establecer un ancho mínimo */
+	min-height: calc(300px * 9 / 16); /* Mantener la proporción 16:9 */
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) and (min-width: 1000px) {
 	.contenedor {
-		grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-		gap: 1.5rem; /* Reducir el espacio entre elementos */
+	  grid-template-columns: repeat(3, 1fr); /* Tres columnas en este rango */
+	  gap: 2rem; /* Ajustar el espacio entre elementos */
 	}
-
-	.trailer_container{
-		height: 40vh; /* Altura relativa al viewport */
-		width: 90vw; /* Anchura relativa al viewport */
+  
+	.youtube-container,
+	.htmlScreen iframe {
+	  width: 80vw; /* Ajustar ancho */
+	  height: calc(80vw * 9 / 16); /* Mantener la proporción 16:9 */
 	}
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 1000px) {
 	.contenedor {
-		grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
-		gap: 1rem; /* Reducir aún más el espacio entre elementos */
-		padding: 0.5rem; /* Reducir el padding */
+	  grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+	  gap: 1.5rem; /* Reducir el espacio entre elementos */
 	}
-
-	.trailer_container{
-		height: 50vh; /* Altura relativa al viewport */
-		width: 95vw; /* Anchura relativa al viewport */
+  
+	.youtube-container,
+	.htmlScreen iframe {
+	  width: 70vw; /* Ajustar ancho */
+	  height: calc(70vw * 9 / 16); /* Mantener la proporción 16:9 */
+	  min-width: 280px; /* Ajustar el ancho mínimo */
+	  min-height: calc(280px * 9 / 16); /* Ajustar la altura mínima */
 	}
-}
+  }
+  
+  @media (max-width: 768px) {
+	.contenedor {
+	  grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+	  gap: 1.5rem; /* Reducir el espacio entre elementos */
+	}
+  
+	.trailer_container {
+	  height: 40vh; /* Altura relativa al viewport */
+	  width: 90vw; /* Anchura relativa al viewport */
+	}
+  
+	.youtube-container,
+	.htmlScreen iframe {
+	  width: 80vw; /* Ancho relativo al viewport */
+	  height: calc(80vw * 9 / 16); /* Mantener la proporción 16:9 */
+	  min-width: 280px; /* Ajustar el ancho mínimo */
+	  min-height: calc(280px * 9 / 16); /* Ajustar la altura mínima */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.contenedor {
+	  grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+	  gap: 1rem; /* Reducir aún más el espacio entre elementos */
+	  padding: 0.5rem; /* Reducir el padding */
+	}
+  
+	.trailer_container {
+	  height: 50vh; /* Altura relativa al viewport */
+	  width: 95vw; /* Anchura relativa al viewport */
+	}
+  
+	.youtube-container,
+	.htmlScreen iframe {
+	  width: 100vw; /* Ancho relativo al viewport */
+	  height: calc(100vw * 9 / 16); /* Mantener la proporción 16:9 */
+	  min-width: 260px; /* Ajustar el ancho mínimo */
+	  min-height: calc(260px * 9 / 16); /* Ajustar la altura mínima */
+	}
+  }
+  
