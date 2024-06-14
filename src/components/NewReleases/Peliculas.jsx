@@ -12,7 +12,7 @@ const Peliculas = () => {
   
 
   const URL_API = `https://api.themoviedb.org/3/movie/popular?api_key=7d93341e75f3672eaab256d04e2ef471&language=en-US`;
-  const PELICULAS_POR_PAGINA = 10; // Número de películas por página
+  const PELICULAS_POR_PAGINA = 8; // Número de películas por página
 
   useEffect(() => {
     cargarPeliculas();
