@@ -1,9 +1,9 @@
 {
-  "name": "accessible-astro-starter",
-  "description": "An Accessible Starter Theme for Astro including several accessibility features and tools to help you build faster.",
+  "name": "just3dmovies",
+  "description": "Explore your favorite movie posters like never before, interact with stunning visuals, and stay updated with the latest blockbusters",
   "version": "3.1.2",
-  "author": "Mark Teekman",
-  "homepage": "https://accessible-astro.netlify.app/",
+  "author": "jorgegdev",
+  "homepage": "https://www.jorgegdev.com/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -31,5 +31,17 @@
     "sass": "^1.49.9",
     "svgo": "^3.2.0",
     "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.5.0",
+    "@react-three/drei": "^9.106.0",
+    "@react-three/fiber": "8.16",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "axios": "^1.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-youtube": "^10.1.0",
+    "three": "^0.164.1"
   }
 }

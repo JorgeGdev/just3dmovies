@@ -1,0 +1,28 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Peliculas from '../components/NewReleases/Peliculas'
+---
+
+<DefaultLayout
+  title="Blog"
+  description="Explore your favorite movie posters like never before, interact with stunning visuals, and stay updated with the latest blockbusters."
+>
+  <section class="cabecera">
+    <div class="space-content container">
+      <h1 class="pointer-events-none">New Releases</h1>
+      <p class="text-2xl pointer-events-none">
+        Welcome to our cutting-edge website where cinema meets technology! Dive into a world of movies with our dynamic 3D interface.  Explore your favorite movie posters like never before, interact with stunning visuals, and stay updated with the latest blockbusters.
+      </p>
+
+        <div class="caja">
+          <Peliculas client:load />
+        </div>
+        
+    
+     
+    </div>
+  </section>
+  
+</DefaultLayout>
+
+

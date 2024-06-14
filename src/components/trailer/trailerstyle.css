@@ -1,0 +1,99 @@
+.contenedor{
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(5, auto);   
+    gap: 3rem; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 20px 0px auto; 
+    padding: 1rem;
+
+}
+
+
+.contenedor .pelicula .titulo {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.paginacion {
+	
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
+
+canvas{
+	height: 450px;
+	width: 30%;
+	
+
+}
+
+@media (max-width: 1024px) {
+	.contenedor {
+		grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas medianas */
+	}
+}
+
+@media (max-width: 768px) {
+	.contenedor {
+		grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+		gap: 2rem; /* Reducir el espacio entre elementos */
+	}
+}
+
+@media (max-width: 480px) {
+	.contenedor {
+		grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+		gap: 1rem; /* Reducir aún más el espacio entre elementos */
+		padding: 0.5rem; /* Reducir el padding */
+	}
+}
+
+
+.htmlScreen iframe{
+	width: 1050px;
+	height: 594px;
+	border: none;
+	
+	background: black;
+}
+
+.tvTitle{
+	font-size: 40px;
+}
+
+
