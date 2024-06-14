@@ -48,29 +48,25 @@ import CanvasPpal from '../components/CanvasPpal.jsx'
     -webkit-text-fill-color: transparent;
   }
 
-  #root{
-    height: 450px;
-    width: 550px;
-    
+  #root {
+  height: 50vh; /* Altura relativa al viewport */
+  width: 60vw; /* Anchura relativa al viewport */
+  max-height: 450px; /* Limitar el tamaño máximo */
+  max-width: 550px; /* Limitar el tamaño máximo */
+}
+
+@media (max-width: 768px) {
+  #root {
+    height: 40vh; /* Altura relativa al viewport */
+    width: 80vw; /* Anchura relativa al viewport */
   }
-
-  @media (max-width: 768px) {
-	
-
-    #root{
-		height: 200px;
-		width: 450px;
-	}
 }
 
 @media (max-width: 480px) {
-	
-
-	.trailer_container{
-		height: 200px;
-		width: 450px;
-	}
-	
+  #root {
+    height: 30vh; /* Altura relativa al viewport */
+    width: 90vw; /* Anchura relativa al viewport */
+  }
 }
 
 

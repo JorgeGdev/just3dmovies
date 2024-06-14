@@ -62,23 +62,16 @@ canvas{
 
 }
 
-@media (max-width: 1024px) {
-	.contenedor {
-		grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas medianas */
-	}
-
-	
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
 	.contenedor {
 		grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-		gap: 2rem; /* Reducir el espacio entre elementos */
+		gap: 1.5rem; /* Reducir el espacio entre elementos */
 	}
 
 	.trailer_container{
-		height: 200px;
-		width: 550px;
+		height: 40vh; /* Altura relativa al viewport */
+		width: 90vw; /* Anchura relativa al viewport */
 	}
 }
 
@@ -90,26 +83,7 @@ canvas{
 	}
 
 	.trailer_container{
-		height: 200px;
-		width: 550px;
+		height: 50vh; /* Altura relativa al viewport */
+		width: 95vw; /* Anchura relativa al viewport */
 	}
-	
 }
-
-
-.htmlScreen iframe{
-	width: 1050px;
-	height: 594px;
-	border: none;
-	
-	background: black;
-}
-
-.tvTitle{
-	font-size: 40px;
-}
-
-
-
-
-
